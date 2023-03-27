@@ -1,14 +1,13 @@
 private class TipoProblema{
-    private String TipoProblema;
-    private String Descripcion;
-    public int placa;
+    
+    private String descripcion;
+   
     /*
      * 
      */
     public TipoProblema(){
-        TipoProblema="";
-        Descripcion = "";
-        placa = 0;
+        descripcion = "";
+        
     }
     /*
      * 
@@ -21,5 +20,13 @@ private class TipoProblema{
      */
     public void imprimir(){
         
+    }
+    public TipoProblema(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    
+    // Métodos de acceso
+    public String getDescripcion() {
+        return this.descripcion;
     }
 }

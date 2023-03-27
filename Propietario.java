@@ -6,11 +6,13 @@ public class Propietario{
     private String Nombre;
     private String Apellido;
     private int Cedula_Identidad;
+    private String categoria;
 
     public Propietario(){
         Nombre ="";
         Apellido="";
         Cedula_Identidad=0;
+        categoria="";
     }
     /*
      * 
@@ -31,4 +33,24 @@ public class Propietario{
         else
         return Cedula_Identidad;
     }
+    public String getNombre() {
+        return this.nombre;
+    }
+
+    public String getCategoria() {
+        return this.categoria;
+    }
+    public double getDescuento() {
+        switch (this.categoria) {
+            case "oro":
+                return 0.1;
+            case "plata":
+                return 0.05;
+            case "bronce":
+                return 0.02;
+            default:
+                return 0.0;
+        }
+    }
+
 }

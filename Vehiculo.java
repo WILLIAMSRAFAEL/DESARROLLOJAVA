@@ -7,6 +7,7 @@ import.java.lang.*;
     private String Marca;
     private String Modelo;
     private int Placa;
+    private TipoProblema TipoProblema;
 
     /*
      * 
@@ -37,4 +38,16 @@ import.java.lang.*;
         else
         return Placa;
     }
+    public String getMarca() {
+        return this.Marca;
+    }
+
+    public String getModelo() {
+        return this.Modelo;
+    }
+
+    public TipoProblema getTipoProblema() {
+        return this.TipoProblema;
+    }
+
   }
